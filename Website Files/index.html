@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackerNews Scraping Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <header>
+            <h1>Welcome, HackerNews readers</h1>
+            <p>I've created this webpage to track top HackerNews articles over large periods of time.</p>
+        </header>
+    </div>
+    <div class="container">
+        <div class="content">
+            <h2>Data Analysis</h2>
+            <div class="images">
+                <img id="image1" src="TopAuthors.png" alt="Image 1">
+                <img id="image2" src="TopArticles.png" alt="Image 2">
+            </div>
+            <div class="table-container">
+                <h2>Hackernews Table</h2>
+                <table id="csvTable">
+                    <thead>
+                        <tr></tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="side-panel">
+            <h2>Subscribe</h2>
+            <form id="emailForm">
+                <label class="emailText" for="email">Enter your email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Submit</button>
+            </form>
+            <p class="expo">Once you subscribe, you will receive an email every 2 hours with updated results.</p>
+            <p class="expo">After 24 hours, you will be unsubscribed.</p>
+            <h4 class="updates">Update Results</h4>
+            <p class="expo">Results of this page will update every 2 hours, or whenever someone hits the below button.</p>
+            <button id="updateButton">Update Page</button>
+	    <p id="lastUpdated">Last Updated: N/A</p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

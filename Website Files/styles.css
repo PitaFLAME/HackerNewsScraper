@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D8E4E9;
+    min-height: 100vh;
+}
+
+header {
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.header {
+    background: linear-gradient(90deg, rgba(12,102,154,1) 0%, rgba(28,143,160,1) 40%, rgba(28,143,160,1) 100%);
+    width: 100%;
+}
+
+
+.container {
+    display: flex;
+    width: 80%;
+    flex-grow: 1;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Add margin to the bottom */
+}
+
+.content, .side-panel {
+    padding: 20px;
+}
+
+.content {
+    flex: 3;
+    border-right: 1px solid #ccc;
+}
+
+.side-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align to the top */
+    align-items: flex-start;
+}
+
+
+.updates {
+    margin-bottom: 0px;
+
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
+    gap: 10px; /* Space between images */
+    width: 100%;
+}
+
+.images img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+}
+
+.expo {
+    color: #666670;
+    font-family: Geneva, sans-serif;
+    font-size: 14px;
+}
+
+#lastUpdated {
+    color: #aaaab0;
+    font-family: Geneva, sans-serif;
+    font-size: 11px;
+
+}
+
+
+.table-container {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+#emailForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#emailForm input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#updateButton {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #1C8FA0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#updateButton:hover {
+    background-color: #0f4d57;
+}
