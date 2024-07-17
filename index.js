@@ -442,7 +442,7 @@ async function pushFilesToFTP() {
   try {
       await client.access({
           host: FTP_HOST,
-          user: 'codespace@nfa.lgu.mybluehost.me',
+          user: '[REMOVED_FOR_DISTRIBUTION]',
           password: '[REMOVED_FOR_DISTRIBUTION]]',
       });
 
